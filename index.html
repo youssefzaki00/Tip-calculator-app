@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tip calculator app</title>
+  <!-- render all elements normally -->
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <!-- Font awesome  -->
+  <link rel="stylesheet" href="CSS/all.min.css" />
+  <!-- main css style -->
+  <link rel="stylesheet" href="CSS/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h2 class="title">splitter</h2>
+  <form class="tip">
+    <div class="container">
+      <div class="content">
+        <div class="bill">
+          <h3>Bill</h3>
+          <input type="number" name="bill" placeholder="0">
+        </div>
+        <div class="select">
+          <h3>Select Tip</h3>
+          <div class="precent">
+            <span data-tip="5%"></span>
+            <span data-tip="10%"></span>
+            <span data-tip="15%"></span>
+            <span data-tip="25%"></span>
+            <span data-tip="50%"></span>
+            <span class="custom"><input type="number" placeholder="Custom"> </span>
+          </div>
+        </div>
+        <div class="number">
+          <h3>Number of People</h3>
+          <input type="number" name="number" placeholder="0">
+        </div>
+      </div>
+      <div class="result">
+        <div class="amount">
+          <div class="content">
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <span>$0.00</span>
+        </div>
+        <div class="total">
+          <div class="content">
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <span>$0.00</span>
+        </div>
+        <input type="button" value="reset" name="reset">
+      </div>
+    </div>
+  </form>
+  <script src="main.js"></script>
+</body>
+
+</html>
